@@ -11,6 +11,39 @@
 			<form id="form" class="form">
 				<h2>Register Now</h2>
 				<!--Username Field-->
+				<div class="form-control">
+					<label for="username">username</label>
+					<input type="text" id="username" placeholder="Enter username." />
+					<!--Error message requesting the username.-->
+					<small>Error Message</small>
+				</div>
+				<!--Email Field-->
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						placeholder="Enter Email" />
+					<small>Error message</small>
+					<!--password Field-->
+					<div class="form-control">
+						<label for="password">password</label>
+						<input type="password" id="password" placeholder="Enter password" />
+						<small>Error message</small>
+						<!--Password check Field-->
+						<div class="form-control">
+							<label for="password">password</label>
+							<input
+								type="password"
+								id="password"
+								placeholder="Enter password" />
+							<small>Error message</small>
+						</div>
+					</div>
+				</div>
+				<!--submit button-->
+				<button type="submit">Submit</button>
 			</form>
 		</div>
 		<script src="script/form.js"></script>
