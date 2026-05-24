@@ -14,9 +14,23 @@ function validateForm() {
 
 	// validating username
 
-	if (userName.length < 3) {
+	if (userName.length < 3 || userName === " ") {
 		errorMessage.textContent += "username must be atleat 3 characters long";
 
+		return;
+	}
+	// email validation.
+	const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+[a-zA-Z]{2,6}&/;
+	if (!emailPattern.test(email)) {
+		errorMessage.textContent += "Please Enter correct Email.\n";
+		return;
+	}
+
+	// password validation.
+
+	if (userPassword.length < 4 || userPassword === " ") {
+		errorMessage.textContent +=
+			"Password must be atleast 4 characters and cannot be empty.\n";
 		return;
 	}
 }

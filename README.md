@@ -6,6 +6,7 @@ HTML is for the structure,CSS is to make our form look awosome and lastly javasc
 ## 2 Form validation.
 
 - Email validation
+  using regex to make sure the password input must be of correct format.
 - Password validation
 - Password check
 - Username validation.
